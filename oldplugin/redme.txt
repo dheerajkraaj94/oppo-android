@@ -1,0 +1,9 @@
+Go to node_module->@ionic-native and remove the below plugins
+
+insomania
+streaming-media
+toast
+plugin 
+
+
+after remove the plugins unzip the folder

@@ -1,0 +1,50 @@
+<!-- <core-loading [hideUntil]="loaded" class="core-loading-center"> -->
+<ion-card>
+    <div [ngStyle]="{'display': liveclassDiv}">
+        <!-- <div id="video_div"><span class="stream_status"></span></div>
+        <div id="livestream"></div> -->
+        <ion-card-content [ngStyle]="{'position':'relative'}">
+            <div id="rejoin_div" [ngStyle]="{'display': rejoinButton, 'position': 'absolute', 'left': '0', 'right': '0', 'top': '0', 'bottom': '0', 'height': '75px', 'margin': 'auto', 'text-align': 'center'}">
+                {{autoRejoinMsg}}
+                <button *ngIf= "reJoin == ''" ion-button (click)="reJoinRoom();">{{roomStatus}}</button>
+                <span *ngIf= "reJoin == 'rejoin'" >{{rejoinStatus}}</span>
+            </div>
+            <div  [ngStyle]="{'margin-top': '30%'}">            
+                    <p [innerHTML]="intro">
+                        
+                    </p>            
+            </div>
+        </ion-card-content>
+    </div>
+    <div *ngIf="errorText">
+        <div id="error_messge"  [ngStyle]="{ 'position': 'absolute', 'left':'-2px', 'top': '50px', 'height': '100px', 'width':'90%', 'margin': '-5% 5% 0% 5%', 'text-align': 'center'}">
+            <span class="error_color" [ngStyle]="{'font-size': '16px', 'line-height': 'normal', 'margin-left':'0'}">
+                {{errorText}}
+            </span>
+        </div>
+    </div> 
+    <!-- <div *ngIf="isPublish == 1"> -->
+    <div [ngStyle]="{'display': liveclassDiv == 'none' ? 'block' : 'none'}">
+        <div class='embed-container'>
+            <div #player_container></div>
+        </div>
+        <ion-card-content>
+            <ion-card-title>
+                {{title}}
+            </ion-card-title>
+            <p  [innerHTML]="intro">
+               
+            </p>
+        </ion-card-content>
+
+    </div>
+</ion-card>
+
+<ion-card *ngIf="referenceDocument && isPublish == 1">
+    <core-file *ngFor="let refDoucment of refDoucments" [file]="refDoucment" [component]="component" [componentId]="componentId"></core-file>
+</ion-card>
+
+<ion-card *ngIf="isPublish == 0" [ngStyle]="{'text-align': 'center', 'height': '100%'}">
+    <p [ngStyle]="{'margin-top':'50%', 'font-size':'20px', 'font-weight': 'bold'}">Video not available.</p>
+</ion-card>
+<!-- </core-loading> -->

@@ -1,0 +1,59 @@
+<!-- <core-loading [hideUntil]="loaded" class="core-loading-center"> -->
+<ion-card>
+    <div [ngStyle]="{'display': liveclassDiv}">
+        <ion-card-content [ngStyle]="{'position':'relative'}">
+            <div id="rejoin_div" [ngStyle]="{'display': rejoinButton, 'position': 'absolute', 'left': '0', 'right': '0', 'top': '0', 'bottom': '0', 'height': '75px', 'margin': 'auto', 'text-align': 'center'}">
+                {{autoRejoinMsg}}
+                <button *ngIf="reJoin == ''" ion-button (click)="reJoinRoom();">{{roomStatus}}</button>
+                <span *ngIf="reJoin == 'rejoin'">{{rejoinStatus}}</span>
+            </div>
+            <div [ngStyle]="{'margin-top': '30%'}">
+                <p [innerHTML]="intro">
+                   
+                </p>
+            </div>
+        </ion-card-content>
+    </div>
+    <div *ngIf="errorText">
+        <div id="error_messge"  [ngStyle]="{ 'position': 'absolute', 'left':'-2px', 'top': '100px', 'height': '100px', 'width':'90%', 'margin': '0 5%', 'text-align': 'center'}">
+            <span class="error_color" [ngStyle]="{'font-size': '16px', 'line-height': 'normal', 'margin-left':'0'}">
+                {{errorText}}
+            </span>
+        </div>
+    </div>
+    <div [ngStyle]="{'display': liveclassDiv == 'none' ? 'block' : 'none'}">
+        <div class='embed-container'>
+            <div #player_container></div>
+        </div>
+
+        <ion-card-content>
+            <ion-card-title>
+                {{title}}
+            </ion-card-title>
+            <p [innerHTML]="intro">
+              
+            </p>
+        </ion-card-content>
+    </div>
+
+</ion-card>
+
+<ion-card *ngIf="referenceDocument">
+    <span *ngFor="let refDoucment of refDoucments">
+        <span *ngIf="refDoucment.isyoutube == 0">
+            <core-file [file]="refDoucment" [component]="component" [componentId]="componentId"></core-file>
+        </span>
+        <span *ngIf="refDoucment.isyoutube == 1">
+            <a ion-button block (click)="go(refDoucment.fileurl)" icon-start>
+                <ion-icon name="link" start></ion-icon>
+                ACCESS THE YOUTUBE
+            </a>
+        </span>
+    </span>
+
+</ion-card>
+<div id="activeTabs"></div>
+<div id="documents"></div>
+<div id="livestream"></div>
+{{no_content}}
+<!-- </core-loading> -->

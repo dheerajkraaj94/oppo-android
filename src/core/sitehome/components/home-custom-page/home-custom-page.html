@@ -1,0 +1,147 @@
+<!-- <ng-container *ngIf="UserSlideShow.showslideshow == 1">
+    Banner list
+    <ng-container *ngFor="let banner of UserSlideShow.banner">
+        <p>{{banner.title}}</p>
+        <p>{{banner.content}}</p>
+        <p><img src="{{banner.image}}"></p>
+    </ng-container>
+</ng-container>
+<p><b>Announcement : </b>{{UserSlideShow.announcements}}</p> -->
+
+    <!-- <ion-slides pager>
+        <ion-slide *ngFor="let banner of UserSlideShow.banner">
+            <img src="{{banner.image}}" alt="chart_image">
+        </ion-slide>
+      </ion-slides> -->
+
+<ion-card-content style="margin-top :-10px;padding:0">
+        <ion-slides pager="true" loop="true" autoplay="3000">
+                <ion-slide *ngFor="let banner of UserSlideShow.banner" style="height:260px;">
+                        <img src="{{banner.image}}" alt="chart_image" style="height: 260px;width:100%;">
+                    </ion-slide>
+        </ion-slides>
+</ion-card-content>
+<ion-card style="margin-top:-0.3rem;margin-bottom:1rem;padding:0;width:100%;margin-left:0px;background: gray;color: white;font-weight: bold;" >
+        <ion-card-content style="margin:-2rem 0rem;">
+            <ion-row>
+                <ion-col col-4 style="align-self: center;">
+                    <ion-label>Announcements</ion-label>
+                </ion-col>
+                <ion-col col-8 style="align-self: center;">
+                    <marquee>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, est esse? Doloremque illum dolores quae voluptas laboriosam eligendi minima, omnis repellendus reprehenderit officiis veritatis quia ipsum suscipit sint tempore ipsam.</marquee>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+        </ion-card>
+
+
+<ion-card class="ion-custom-card">
+<ion-card-header style="padding:7px 16px;">
+    <ion-card-title>My Dashboard</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+    <ion-row>
+        <ion-col size="12" style="align-self: center;">
+            <h3 style="margin:10px 0px;font-size: 18px;color: #000;font-weight: 500;"> Total Courses - {{CourseProgressSummary.total_enrollment}}</h3> 
+            <canvas #pieCanvas></canvas>
+            <!-- <p>Completed Courses {{CourseProgressSummary.completed}} </p>
+            <p>Pending Courses {{CourseProgressSummary.not_completed}}</p> -->
+        </ion-col>
+        <!-- <ion-col size="6">
+            <div> -->
+                <!-- <img src="https://sitejerk.com/images/chart-png-9.png" alt="chart_image" width="80%" height="50%">
+                <div id="piechart" style="width: 90px; height: 50px;"></div> -->
+                <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+                <!-- <canvas #pieCanvas></canvas> -->
+            <!-- </div>
+        </ion-col> -->
+    </ion-row>
+</ion-card-content>
+</ion-card>
+<ion-card class="ion-custom-card">
+<ion-card-header style="padding:7px 16px;">
+    <ion-card-title>
+        <ion-row>
+            <ion-col>Course Progress</ion-col>
+            <ion-col>
+                <div class="ion-text-alignment">
+                    See All <ion-icon name="arrow-forward"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card-title>
+</ion-card-header>
+<ion-card-content>
+    <ion-scroll scrollX="true" style="width:100%; height:24vh;">
+        <ion-row nowrap>
+            <ng-container *ngFor="let course of UserSlideShow.my_courses">
+                <ion-col col-7 style="margin:0px 10px;padding:0;">
+                    <!-- Image is not coming by server api so i create a default image
+                    <img src="{{course.image_url}}" alt="image" style="height: 100%;width: 100%;" /> -->
+                    <img src="https://qa-moodle.vedific.com/theme/image.php/vedific/theme/1560503180/noimg" alt="image" style="height: 18vh;width: 100%;border-radius:5px;" />
+                    <h3 style="margin: 13px 0px;font-size: 18px;color: #000;font-weight: 400;">{{course.fullname}}
+                    </h3>
+                </ion-col>
+            </ng-container>
+        </ion-row>
+    </ion-scroll>
+</ion-card-content>
+</ion-card>
+<ion-card class="ion-custom-card">
+<ion-card-header style="padding:7px 16px;">
+    <ion-card-title>
+        <ion-row>
+            <ion-col>What's New?</ion-col>
+            <ion-col>
+                <div class="ion-text-alignment">
+                    See All <ion-icon name="arrow-forward"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card-title>
+</ion-card-header>
+<ion-card-content>
+    <ion-scroll scrollX="true" style="width:100%; height:24vh;">
+        <ion-row nowrap>
+            <ng-container *ngFor="let market of UserSlideShow.marketing_tiles">
+
+                <ion-col col-7 style="margin:0px 10px;padding:0;">
+                    <img src="{{market.marketingimage}}" alt="image" style="height: 18vh;width: 100%;border-radius:5px;" />
+                    <h3 style="margin: 13px 0px;font-size: 18px;color: #000;font-weight: 400;">{{market.marketing}}</h3>
+                    <!-- <p>{{market.marketingcontent}}</p> -->
+                    <!-- <a href="{{market.marketingbuttonurl}}">{{market.marketingbuttontext}}</a> -->
+                </ion-col>
+            </ng-container>
+        </ion-row>
+    </ion-scroll>
+</ion-card-content>
+</ion-card>
+<ion-card class="ion-custom-card">
+<ion-card-header style="padding:7px 16px;">
+    <ion-card-title>
+        <ion-row>
+            <ion-col>My Learning Plan</ion-col>
+            <ion-col>
+                <div class="ion-text-alignment">
+                    See All <ion-icon name="arrow-forward"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card-title>
+</ion-card-header>
+<ion-card-content>
+    <ion-scroll scrollX="true" style="width:100%; height:24vh;">
+        <ion-row nowrap>
+            <ng-container *ngFor="let course of UserSlideShow.my_courses">
+                <ion-col col-7 style="margin:0px 10px;padding:0;">
+                    <!-- Image is not coming by server api so i create a default image
+                    <img src="{{course.image_url}}" alt="image" style="height: 100%;width: 100%;" /> -->
+                    <img src="https://qa-moodle.vedific.com/theme/image.php/vedific/theme/1560503180/noimg" alt="image" style="height: 18vh;width: 100%;border-radius:5px;" />
+                    <h3 style="margin: 13px 0px;font-size: 18px;color: #000;font-weight: 400;">{{course.fullname}}
+                    </h3>
+                </ion-col>
+            </ng-container>
+        </ion-row>
+    </ion-scroll>
+</ion-card-content>
+</ion-card>

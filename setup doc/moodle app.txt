@@ -1,0 +1,61 @@
+Moodle app setup:
+-------------------
+	
+	ionic 3.20.0
+	
+	****************************
+	moodle3.5
+	************************
+	https://docs.moodle.org/dev/Setting_up_your_development_environment_for_Moodle_Mobile_2
+	npm cache clean
+	npm install -g gulp
+	npm install --global --production windows-build-tools
+	git clone https://github.com/moodlehq/moodlemobile2.git moodlemobiledirectory
+
+	
+	cordova platform add android
+	cordova plugin save
+	cordova build android
+	
+	Note: You can downgrade to your old version by running: npm i -g ionic@3.20.0
+	
+-----------------------------------------------------------------------------	
+	C:\xampp\htdocs\moodlemobile2\platforms\android\app\build.gradle
+	
+	configurations {
+		all*.exclude group: 'com.android.support', module: 'support-v13'
+	}
+	
+	 multiDexEnabled true
+-----------------------------------------------------------------------------
+C:\xampp\htdocs\moodlemobile2\plugins\cordova-clipboard\plugin.xml
+<framework src="com.android.support:appcompat-v7:26.1.0"/> line 46
+
+----------------------------------------------------------------------------
+
+C:\xampp\htdocs\moodlemobile2\src\app\app.module.ts
+import { AddonModVedificlcModule } from '@addon/mod/vedificlc/vedificlcc.module';
+import { AddonModVedificlcwowzaModule } from '@addon/mod/vedificlcwowza/vedificlcwowza.module';
+import { AddonModVedificVCModule } from '@addon/mod/vedificvc/screenshare.module';
+import { WowzaSubscriber } from '@addon/mod/vedificlc/providers/wowza-subscriber';
+import { Toast } from '@ionic-native/toast';
+import { StreamingMedia } from '@ionic-native/streaming-media';
+import { Insomnia } from '@ionic-native/insomnia';
+
+import: AddonModVedificlcModule,AddonModVedificVCModule,AddonModVedificlcwowzaModule,
+
+provider : WowzaSubscriber,Toast,StreamingMedia,ScreenOrientation,Insomnia,
+-----------------------------------------------------------------------------------------
+C:\xampp\htdocs\moodlemobile2\src\core\course\providers\course.ts
+CORE_MODULES :  'vedificlc', 'vedificvc', 'vedificlcwowza'
+
+----------------------------------------------------------------------------------------
+
+C:\xampp\htdocs\moodlemobile2\src\core\compile\providers\compile.ts
+import { ADDON_MOD_VEDIFICLC_PROVIDERS } from '@addon/mod/vedificlc/vedificlcc.module'; 
+import { ADDON_MOD_VEDIFICLCWOWZA_PROVIDERS } from '@addon/mod/vedificlcwowza/vedificlcwowza.module';
+import { ADDON_MOD_VEDIFICVC_PROVIDERS } from '@addon/mod/vedificvc/screenshare.module';
+providers :  .concat(ADDON_MOD_VEDIFICLC_PROVIDERS).concat(ADDON_MOD_VEDIFICVC_PROVIDERS).concat(ADDON_MOD_VEDIFICLCWOWZA_PROVIDERS);
+				
+-----------------------------------------------------------------------------------------
+

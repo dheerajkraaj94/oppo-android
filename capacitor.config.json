@@ -1,0 +1,7 @@
+{
+  "appId": "com.oppo-android",
+  "appName": "moodlemobile",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

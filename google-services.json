@@ -1,0 +1,263 @@
+{
+  "project_info": {
+    "project_number": "237675746941",
+    "firebase_url": "https://vedific-24288.firebaseio.com",
+    "project_id": "vedific-24288",
+    "storage_bucket": "vedific-24288.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:4280d7796ef1f537",
+        "android_client_info": {
+          "package_name": "com.testvedific.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:57c4f1fec9e9eb8d",
+        "android_client_info": {
+          "package_name": "com.vedific.corplms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:dcdc6810f5278538",
+        "android_client_info": {
+          "package_name": "com.vedific.corplmsEnterprise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:7043f0fb046165eb",
+        "android_client_info": {
+          "package_name": "com.vedific.lecture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:94e66ac689f2affd",
+        "android_client_info": {
+          "package_name": "com.vedific.lms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:ed687c0a8d17158a",
+        "android_client_info": {
+          "package_name": "com.vedific.oppo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237675746941:android:76aebba09439eb6a",
+        "android_client_info": {
+          "package_name": "com.vedific.sslacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQCrZfOQ6_5s0zw9zmN7FsfAFq8i3HDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237675746941-8095hf3h7h75335n50kmilgkst09kdvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "237675746941-88d8s3tmp1fg5jcqkfeclicm7p52t2bp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vedific.sslacademy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
